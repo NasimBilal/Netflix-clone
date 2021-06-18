@@ -83,11 +83,7 @@ class RawPost extends React.Component{
                 {
                     this.state.originals.map((item,key)=>
                     <div className="container">
-                            <img className="poster_netflix" src={image_api+item.poster_path}  alt={item.title} />
-                        <div className="overlay">
-                            <button className="watch_netflix">Watch Now</button>
-                            <div className="text">{item.overview} {item.vote_average}</div>
-                        </div>
+                        <img className="poster-netflix" src={image_api+item.poster_path}  alt={item.title} />
                     </div>
                 )}
                 </div>
@@ -98,8 +94,8 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button onClick={()=>yt_trailer(item.id)} className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <button onClick={()=>yt_trailer(item.id)} className="watch">Watch Trailer</button>
+                        <div className="text">{item.title} <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}
@@ -112,8 +108,7 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <div className="text">{item.title}  <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}
@@ -125,8 +120,7 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <div className="text">{item.title}  <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}
@@ -138,8 +132,7 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <div className="text">{item.title} <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}
@@ -151,8 +144,7 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <div className="text">{item.title}  <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}
@@ -164,8 +156,7 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <div className="text">{item.title}  <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}
@@ -177,8 +168,7 @@ class RawPost extends React.Component{
                     <div className="container">
                     <img className="poster" src={image_api+item.poster_path}  alt={item.title} />
                     <div className="overlay">
-                        <button className="watch">Watch Now</button>
-                        <div className="text">{item.title} {item.vote_average}</div>
+                        <div className="text">{item.title}  <br /><br /> {`Rating ${item.vote_average}`}</div>
                     </div>
                 </div>
                 )}

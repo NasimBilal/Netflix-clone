@@ -15,7 +15,7 @@
 .posters::-webkit-scrollbar{
     display: none;
 }
-.poster_netflix{
+.poster-netflix{
     max-height: 350px;
     margin-right: 10px;
     cursor: pointer;
