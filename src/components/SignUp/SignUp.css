@@ -1,0 +1,39 @@
+
+.signup-navbar{
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    height: 120px;
+}
+.signup-logo{
+    height: 2em;
+    width: 7em;
+    position: fixed;
+    top: 2em;
+    left: 3em;
+}
+.hr{
+    position: fixed;
+    top: 110px;
+    width: 100%;
+}
+.form{
+    text-align: left;
+    margin-top: 120px;
+    width: 30%;
+    margin-left: 400px;
+}
+.form .signup-heading{
+    color: black;
+    font-size: 24px;
+}
+.form .signup-subheading{
+    font-weight: 100;
+    font-size: 19px;
+}
+.form .signup-email{
+    font-weight: 500;
+}
+.form .signup-password{
+    padding: 16px 103px;
+}

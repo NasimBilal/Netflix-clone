@@ -1,0 +1,46 @@
+.signin .signin-bg{
+    z-index: 0;  
+    width: 100%;
+    height: 40em;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.67),#111);
+}
+.signin .signin-fade-bottom{
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.67),#111);
+    position: fixed;
+    top: 0;
+    z-index: 0.5;
+    width: 100%;
+    height: 40em; 
+}
+.signin .signin-logo{
+    z-index: 1;
+    height: 2em;
+    width: 7em;
+    position: fixed;
+    top: 2em;
+    left: 3em;
+}
+.signin .signin-form{
+    position: fixed;
+    top: 6em;
+    left: 28em;
+    background-color: rgba(0, 0, 0, 0.747);
+    width: 30%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.signin .signin-form h2{
+    margin: 20px;
+}
+.signin .signin-form input{
+    padding: 16px 80px;
+    margin: 20px;
+}
+.signin-form ul{
+    margin: 20px;
+    cursor: pointer;
+}
+.signin-form h4{
+    margin: 20px;
+}

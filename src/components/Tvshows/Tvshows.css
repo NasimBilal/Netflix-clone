@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+.tvshows-row{
+    background-color: black;
+}
+.tvshows .tvshows-row h2{
+    margin-top: 50px;
+    color: white;
+}

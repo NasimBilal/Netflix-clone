@@ -1,0 +1,29 @@
+.search{
+    background-color: black;
+}
+.search .search-results{
+    display: flex;
+    padding: 10px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+}
+.search .search-results::-webkit-scrollbar{
+    display: none;
+}
+.search .search-caption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(109, 95, 95);
+    padding-top: 56px;
+    margin-left: 20px;
+}
+.search-poster{
+    position: relative;
+}
+.search-img{
+    max-height: 300px;
+    margin-right: 40px !important;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
