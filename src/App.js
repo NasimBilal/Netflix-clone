@@ -1,24 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import WelcomePage from './Pages/Welcome';
+import SignUpPage from './Pages/SignUp';
+import SignInPage from './Pages/SignIn';
+import Home from './Pages/Home';
+import Mail from './Context/emailContext';
+import TvShowsPage from './Pages/TvShows';
+import MoviesPage from './Pages/Movies';
+import Search from './Context/searchContext';
+import SearchPage from './Pages/Search';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Mail>
+      <Search>
+      <div className="App">
+        <BrowserRouter>
+          <Route exact path='/'>
+            <WelcomePage/>
+          </Route>
+          <Route path='/signup'>
+            <SignUpPage/>
+          </Route>
+          <Route path='/signin'>
+            <SignInPage/>
+          </Route>
+          <Route path='/home'>
+            <Home/>
+          </Route>
+          <Route path='/tv-shows'>
+            <TvShowsPage/>
+          </Route>
+          <Route path='/movies'>
+            <MoviesPage/>
+          </Route>
+          <Route exact path='/search'>
+            <SearchPage/>
+          </Route>
+        </BrowserRouter>
+      </div>
+      </Search>
+
+    </Mail>
   );
 }
 
